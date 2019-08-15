@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.youfan</groupId>
+    <artifactId>youfanshop</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>youfancommon</module>
+        <module>solrtest</module>
+        <module>ehcachetest</module>
+        <module>rabbitmqtest</module>
+        <module>youfanmsgqueueserv</module>
+        <module>youfanPinDaoIndex</module>
+        <module>youfanredissrv</module>
+        <module>youfancloudserver</module>
+        <module>youfanadmin</module>
+        <module>rabbitmqspringboot</module>
+        <module>rabbitmqsw</module>
+        <module>youfandordernew</module>
+        <module>youfanpayserv</module>
+        <module>youfanproduct</module>
+        <module>youfanproducttype</module>
+        <module>youfanshopmerchant</module>
+        <module>youfanshopuser</module>
+        <module>hystrixTest</module>
+        <module>hystrixspringcloud</module>
+        <module>ribbotest</module>
+        <module>youfanproducttype2</module>
+        <module>youfanrobbinserver</module>
+        <module>DruidTest</module>
+        <module>youfanquartzservice</module>
+    </modules>
+
+
+</project>

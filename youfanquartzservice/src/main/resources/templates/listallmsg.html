@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Title</title>
+</head>
+<body>
+<table border="1">
+    <tr>
+        <td>主键</td>
+        <td>业务类型</td>
+        <td>业务id</td>
+        <td>消息实体</td>
+        <td>消息状态</td>
+        <td>操作</td>
+    </tr>
+    <tr th:each="message: ${messagelist}">
+        <td th:text="${message.id}">youfan</td>
+        <td th:text="${message.ywtype}">2.41</td>
+        <td th:text="${message.ywid}">2.41</td>
+        <td th:text="${message.ywmessage}">2.41</td>
+        <td ><span th:switch="${message.ywmessagestatus}"><span th:case="1">未发送</span><span th:case="2">已发送</span><span th:case="3">发送失败</span><span th:case="4">消费者未接受</span><span th:case="5">消费成功</span><span th:case="6">消费失败</span></span></td>
+        <td>删除</td>
+    </tr>
+</table>
+</body>
+</html>

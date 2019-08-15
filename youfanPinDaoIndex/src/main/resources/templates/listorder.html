@@ -1,0 +1,27 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title></title>
+</head>
+<body>
+<table border="1">
+    <tr>
+        <td>支付金额</td>
+        <td>用户id</td>
+        <td>收货人地址</td>
+        <td>收货人电话</td>
+        <td>收货人姓名</td>
+        <td>交易流水号</td>
+        <td>操作</td>
+    </tr>
+    <tr th:each="order: ${listorder}">
+        <td th:text="${order.payamount}"></td>
+        <td th:text="${order.userid}"> </td>
+        <td th:text="${order.consigneeadress}"></td>
+        <td th:text="${order.consigneephone}"></td>
+        <td th:text="${order.consigneename}"></td>
+        <td th:text="${order.tradenumber}"></td>
+        <td ><a href="#">操作</a></td>
+    </tr>
+</table>
+</body>
+</html>
